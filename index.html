@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2E5077;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        .flower {
+            width: 300px;
+            height: 300px;
+            animation: rotate 5s infinite linear, appear 3s ease-in-out forwards;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            animation: fadeInText 4s ease-in-out forwards;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Sorry, Pineapple 🌹</h1>
+        <img src="cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL2xhdXJhc3RlZmFubzI2Nl9zaW1wbGVfYWJzdHJhY3RfaW5fcmlzb2dyYXBoX3ByaW50aW5nX2lsbHVzdHJhdF80MTY1NDU4MS1lNTQ2LTRhNTctYjkwMC03YjNmMmViMzA5OTBfMS5wbmc-Photoroom.png" alt="Flower" class="flower">
+        <p>Please forgive me. You mean the world to me. 💖</p>
+    </div>
+</body>
+</html>
+
+
